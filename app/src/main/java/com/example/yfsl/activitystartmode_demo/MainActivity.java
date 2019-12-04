@@ -44,7 +44,9 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
                 forwordToActivity(MainActivity.this,ActivitySingleTask.class);
                 break;
             case R.id.single_instance_btn:
-                forwordToActivity(MainActivity.this,ActivitySingleInstance.class);
+                Intent intent = new Intent();
+                intent.setAction("com.example.demo.singleinstance");
+                startActivity(intent);
                 break;
         }
     }

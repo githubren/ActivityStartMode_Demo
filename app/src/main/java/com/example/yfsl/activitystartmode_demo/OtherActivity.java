@@ -16,7 +16,9 @@ public class OtherActivity extends BaseActivity{
         backBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                //跳转到ActivitySingleTop页面
 //                forwordToActivity(OtherActivity.this,ActivitySingleTop.class);
+                //跳转到ActivitySingleTask页面
                 forwordToActivity(OtherActivity.this,ActivitySingleTask.class);
             }
         });

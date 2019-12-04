@@ -1,6 +1,5 @@
 package com.example.yfsl.activitystartmode_demo;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.View;
@@ -25,8 +24,7 @@ public class ActivitySingleTop extends BaseActivity{
         mSecondToSingleTop.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(ActivitySingleTop.this,ActivitySingleTop.class);
-                startActivity(intent);
+                forwordToActivity(ActivitySingleTop.this,ActivitySingleTop.class);
             }
         });
 

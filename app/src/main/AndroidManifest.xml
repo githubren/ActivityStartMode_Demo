@@ -23,10 +23,17 @@
             android:launchMode="standard"/>
         <activity
             android:name=".ActivitySingleTask"
-            android:launchMode="singleTask"/>
+            android:launchMode="singleTask"
+            android:taskAffinity="com.example.yfsl.activitystartmode_demo.singletask"/>
         <activity
             android:name=".ActivitySingleInstance"
-            android:launchMode="singleInstance"/>
+            android:launchMode="singleInstance">
+
+            <intent-filter>
+                <action android:name="com.example.demo.singleinstance"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
         <activity
             android:name=".ActivitySingleTop"
             android:launchMode="singleTop"/>
